@@ -8,14 +8,18 @@ class Pessoa {
 
    /* inner class endereco {
         var rua: String = "Rua Teste"
-    }*/ // Inner Class
+    }*/ // Inner Class - Classe dentro da Classe
+
+    constructor()
+    fun pessoainfo() = "$nome e $cpf"
 }
 
 fun main(){
     val islande = Pessoa()
 
-    println(islande.nome)
-    println(islande.cpf)
+    println(islande.pessoainfo())
 
-   // println(islande.endereco().rua) Inner Class
+   // println(islande.nome)
+   // println(islande.cpf)
+   // println(islande.endereco().rua) //Inner Class - Chamar Classe Interna
 }
